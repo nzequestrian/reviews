@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Reviews</title>
+</head>
+<body>
+<h4>Review Header for specific reviews 4 Reason</h4>
+
+	<ul>
+		<li th:each="review : ${reviews}"> 
+			<a th:href="|@{/reviews/}${review.trailId}|">
+				<span th:text="${review.title}"></span>
+				</a>
+			</li>
+		</ul>
+	</body>
+</html>

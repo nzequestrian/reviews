@@ -1,10 +1,11 @@
 
 package com.bridleplates.reviews;
-
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ReviewSiteRepository {
 
 	private Map<Long, Review> reviewRepository = new HashMap<Long, Review>();
