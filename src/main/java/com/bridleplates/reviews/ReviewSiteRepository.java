@@ -8,19 +8,23 @@ import org.springframework.stereotype.Service;
 @Service
 public class ReviewSiteRepository {
 
-	private Map<Long, Review> reviewRepository = new HashMap<Long, Review>();
+	private Map<Long, Review> reviewRepository = new HashMap<>();
 
-	public ReviewSiteRepository() {
-		Review TrailOneReview = new Review(2L, "Trail One Review", "TrailOneImg", "Easy", "This is Trail One");
-		Review TrailTwoReview = new Review(3L, "Trail Two Review", "TrailTwoImg", "Moderate",
-				"This is a review of trail two");
-		Review TrailThreeReview = new Review(4L, "Trail Three Review", "TrailThreeImg", "Difficult",
-				"This is a review of trail three");
+
+
+	public ReviewSiteRepository() 
+	{
+		Review TrailOneReview = new Review(2L, "Trail One Review", "/img/franz.jpg", "Easy", "This is Trail One");
+		Review TrailTwoReview = new Review(3L, "Trail Two Review", "TrailTwoImg", "Moderate","This is a review of trail two");
+		Review TrailThreeReview = new Review(4L, "Trail Three Review", "TrailThreeImg", "Difficult","This is a review of trail three");
 
 		this.addReview(TrailOneReview);
 		this.addReview(TrailTwoReview);
 		this.addReview(TrailThreeReview);
 
+	}
+	public Map<Long, Review> getReviewRepository() {
+		return reviewRepository;
 	}
 
 	public int getSizeOfRepository() {

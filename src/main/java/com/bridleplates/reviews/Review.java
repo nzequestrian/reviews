@@ -16,16 +16,16 @@ public class Review {
 		this.category = category;
 		this.content = content;
 	}
-
-	public long getTrailId() {
+	public Long getTrailId() {
 		return trailId;
 	}
 
+	
 	public String getTitle() {
 		return title;
 	}
 
-	public String getImaUrl() {
+	public String getImgUrl() {
 		return imgUrl;
 	}
 
@@ -36,5 +36,6 @@ public class Review {
 	public String getContent() {
 		return content;
 	}
+
 
 }

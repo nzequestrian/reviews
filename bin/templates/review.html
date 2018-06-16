@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Review</title>
+	<title>Hiking Review</title>
 </head>
 <body>
-<h2>Review Header for specific reviews 4 Reasons</h2>
+<h1>
+	<span th:text="${review.title}"></span>
+</h1>
+<p>
+	<span th:text="${review.category}"></span>
+</p>
+	<img th:src="${review.imgUrl}"/>
+<p>
+	<span th:text="${review.content}"></span>
+</p>
 
-</body>
+<footer>
+	<small>Copyright www.bridleplates.com LLC 2018</small>
+</footer>
+	</body>
 </html>

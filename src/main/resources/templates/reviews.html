@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>All Reviews</title>
+	<title>All Hiking Trails</title>
 </head>
 <body>
-<h4>Review Header for specific reviews 4 Reason</h4>
+<h1>List Of Hiking Trails</h1>
 
-	<ul>
-		<li th:each="review : ${reviews}"> 
-			<a th:href="|@{/reviews/}${review.trailId}|">
-				<span th:text="${review.title}"></span>
-				</a>
-			</li>
-		</ul>
+
+<ul>
+	<li th:each="review:${reviews}">
+		<a th:href="@{/reviews/} + ${review.trailId}">
+		<span th:text="${review.title}"></span>
+		</a>
+	</li>
+</ul>
+<!--
+			<span the:text="$review.title}"></span>
+		</a>
+-->
+
+<footer>
+	<small>Copyright www.bridleplates.com LLC 2018</small>
+</footer>
+
 	</body>
 </html>
