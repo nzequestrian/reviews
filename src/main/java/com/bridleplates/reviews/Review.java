@@ -8,7 +8,7 @@ public class Review {
 	private String category;
 	private String content;
 
-	public Review(long trailId, String title, String imgUrl, String category, String content) {
+	public Review(long trailId, String title, String imgUrl,String category, String content) {
 		super();
 		this.trailId = trailId;
 		this.title = title;
@@ -16,11 +16,11 @@ public class Review {
 		this.category = category;
 		this.content = content;
 	}
+
 	public Long getTrailId() {
 		return trailId;
 	}
 
-	
 	public String getTitle() {
 		return title;
 	}
@@ -28,7 +28,7 @@ public class Review {
 	public String getImgUrl() {
 		return imgUrl;
 	}
-
+	
 	public String getCategory() {
 		return category;
 	}
@@ -36,6 +36,5 @@ public class Review {
 	public String getContent() {
 		return content;
 	}
-
 
 }

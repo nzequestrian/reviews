@@ -42,8 +42,10 @@ public class ReviewSiteControllerTest {
 	}
 
 	@Test
-	public void shouldReturnModel() throws Exception {
+	public void shouldReturnModelOfReviews() throws Exception {
 		mvc.perform(get("/reviews")).andExpect(model().attribute("reviews", reviewRepo.getReviews()));
 	}
-
+	
+	
 }
+

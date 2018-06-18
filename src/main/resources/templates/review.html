@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Hiking Review</title>
-</head>
-<body>
-<h1>
-	<span th:text="${review.title}"></span>
-</h1>
-<p>
-	<span th:text="${review.category}"></span>
-</p>
-	<img th:src="${review.imgUrl}"/>
-<p>
-	<span th:text="${review.content}"></span>
-</p>
+<meta charset="utf-8" />
 
-<footer>
-	<small>Copyright www.bridleplates.com LLC 2018</small>
-</footer>
-	</body>
+<head> 
+	<title th:text="${review.title}"></title> 
+</head> 
+
+
+<body>
+
+<h1><span th:text="${review.title}"></span></h1>
+
+<p><span th:text="${review.category}"></span></p>
+	
+<p><img th:src="${review.imgUrl}"/></p>
+
+<p><small><span th:text="${review.content}"></span></small></p>
+<h6><a th:href="@{/reviews}">Back to list of reviews</a></h6>
+
+<footer> <small>Copyright www.bridleplates.com LLC 2018</small> </footer>
+	
+</body>
 </html>

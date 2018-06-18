@@ -11,7 +11,7 @@ import org.junit.Test;
 
 public class ReviewSiteRepositoryTest {
 	ReviewSiteRepository reviewRepo = new ReviewSiteRepository();
-	Review review = new Review(999L, "Test Title", "testImgUrl", "category", "content");
+	Review review = new Review(999L, "Test Title", "testImgUrl","category", "content");
 
 	@Test
 	public void shouldAddNewReviewToSiteRepo() {

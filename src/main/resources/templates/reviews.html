@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8" />
+
 <head>
-	<title>All Hiking Trails</title>
+	<title>Hiking Trail Reviews</title>	
 </head>
+
 <body>
-<h1>List Of Hiking Trails</h1>
-
-
+	<h1>Glacial Hikes in NZ - 2017/18</h1>  
+	<p><h4>Welcome to our review home page.</h4></p>
+	<p>Please follow the links below to view a review.</p>
 <ul>
-	<li th:each="review:${reviews}">
-		<a th:href="@{/reviews/} + ${review.trailId}">
-		<span th:text="${review.title}"></span>
+	<li th:each="review : ${reviews}">
+		<a th:href="|@{/reviews/}${review.trailId}|">
+			<span th:text="${review.title}"></span>
 		</a>
 	</li>
 </ul>
-<!--
-			<span the:text="$review.title}"></span>
-		</a>
--->
 
 <footer>
+	
 	<small>Copyright www.bridleplates.com LLC 2018</small>
 </footer>
 
